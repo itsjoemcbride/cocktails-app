@@ -1,11 +1,7 @@
-import React from 'react';
+import React from "react";
 
 const DrinkListing = () => {
-    return (
-        <div>
-            DrinkListing
-        </div>
-    );
+  return <div>DrinkListing</div>;
 };
 
 export default DrinkListing;

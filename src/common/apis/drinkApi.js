@@ -1,5 +1,5 @@
-import axios from 'axios';
+import axios from "axios";
 
 export default axios.create({
-    baseURL: "https://www.thecocktaildb.com/api/json/v1/",
-})
+  baseURL: "https://www.thecocktaildb.com/api/json/v1/",
+});

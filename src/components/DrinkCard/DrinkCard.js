@@ -1,11 +1,7 @@
-import React from 'react';
+import React from "react";
 
 const DrinkCard = () => {
-    return (
-        <div>
-            DrinkCard
-        </div>
-    );
+  return <div>DrinkCard</div>;
 };
 
 export default DrinkCard;
