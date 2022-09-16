@@ -8,12 +8,18 @@ const DrinkListing = () => {
   const drinks = useSelector(getAllDrinks);
   let renderDrinks = "";
 
-  console.log(drinks);
+  // let nest1 = [];
+  // Object.entries(drinks?.drinks[key]).map((n1, index) => {
+  //   nest1[index] = n1;
+  // });
+  // console.log(nest1);
+  console.log(drinks.drinks);
 
   renderDrinks =
-    drinks.idDrink > 0 ? (
-      drinks.map((drink, index) => {
-        <DrinkCard key={index} data={drink} />;
+    Boolean(drinks.drinks) === true ? (
+      drinks.drinks.map((drink, index) => {
+        console.log("it works maybe");
+        return <DrinkCard key={index} data={drink} />;
       })
     ) : (
       <div className="drinks-error">

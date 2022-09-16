@@ -1,21 +1,14 @@
 import React from "react";
+import "./DrinkCard.scss";
 
 const DrinkCard = (props) => {
   const { data } = props;
   return (
-    <div className="card-item">
-      <div className="card-inner">
-        <div className="card-top">
-          <img src={data.strImageSource} alt={data.strDrink} />
-          <p>data</p>
-        </div>
-        <div className="card-bottom">
-          <div className="card-info">
-            <h4>{data.title}</h4>
-            <p>{data.year}</p>
-          </div>
-        </div>
-      </div>
+    <div className="card-container">
+      <img src={data.strDrinkThumb} alt={data.strDrink} height="250px" />
+      <h3>{data.strDrink}</h3>
+      <h4>{data.strIBA}</h4>
+      <button>Recipe</button>
     </div>
   );
 };
