@@ -1,0 +1,38 @@
+@import "../../common/colors.scss";
+
+.card-container {
+  background-color: $secondary-color;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 10px;
+  justify-content: space-between;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000;
+  box-shadow: 5px 5px 15px 5px #000000;
+  margin-bottom: 25px;
+}
+
+button {
+  background-color: $button-primary;
+  color: $font-primary;
+  font-size: medium;
+  font-weight: 600;
+  margin-bottom: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 0px;
+}
+button:hover {
+  background-color: $button-secondary;
+}
+
+h3 {
+  color: $font-primary;
+  margin-left: 10px;
+}
+
+h4 {
+  color: $font-secondary;
+  margin-left: 10px;
+}

@@ -1,10 +1,12 @@
 @import "../../common/colors.scss";
 
-.drink-list {
-  margin: 20px 0px;
-  h2 {
-    color: $font-secondary;
-    margin-bottom: 10px;
-    font-weight: 400;
-  }
+.drink-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+h2 {
+  color: $font-secondary;
 }
