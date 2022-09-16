@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./DrinkCard.scss";
 
 const DrinkCard = (props) => {
@@ -8,7 +9,9 @@ const DrinkCard = (props) => {
       <img src={data.strDrinkThumb} alt={data.strDrink} height="250px" />
       <h3>{data.strDrink}</h3>
       <h4>{data.strIBA}</h4>
-      <button>Recipe</button>
+      <Link to={`/drink/${data.idDrink}`}>
+        <button>Recipe</button>
+      </Link>
     </div>
   );
 };
