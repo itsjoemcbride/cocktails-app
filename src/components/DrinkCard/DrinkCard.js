@@ -9,8 +9,8 @@ const DrinkCard = (props) => {
       <img src={data.strDrinkThumb} alt={data.strDrink} height="250px" />
       <h3>{data.strDrink}</h3>
       <h4>{data.strIBA}</h4>
-      <Link to={`/drink/${data.idDrink}`}>
-        <button>Recipe</button>
+      <Link className="recipe-btn" to={`/drink/${data.idDrink}`}>
+        Details
       </Link>
     </div>
   );
