@@ -1,7 +1,7 @@
 @import "../../common/colors.scss";
 
 .card-container {
-  background-color: $secondary-color;
+  background-color: $text-icons;
   width: 250px;
   display: flex;
   flex-direction: column;
@@ -14,8 +14,8 @@
 }
 
 .recipe-btn {
-  background-color: $button-primary;
-  color: $font-primary;
+  background-color: $accent;
+  color: $text-icons;
   font-size: medium;
   font-weight: 600;
   margin-bottom: 0px;
@@ -25,15 +25,15 @@
   text-align: center;
 }
 .recipe-btn:hover {
-  background-color: $button-secondary;
+  background-color: $light-primary;
 }
 
 h3 {
-  color: $font-primary;
+  color: $primary-text;
   margin-left: 10px;
 }
 
 h4 {
-  color: $font-secondary;
+  color: $secondary-text;
   margin-left: 10px;
 }
