@@ -7,8 +7,8 @@ h1 {
 
 .drink-details {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  flex-direction: column;
+  flex-wrap: wrap;
   gap: 15px;
 }
 
@@ -17,8 +17,15 @@ h1 {
   flex-direction: column;
   flex-wrap: wrap;
   color: $text-icons;
+  justify-content: center;
+  max-width: 300px;
 }
 
-img {
-  border-radius: 25px;
+.details-content {
+  max-width: 300px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
 }

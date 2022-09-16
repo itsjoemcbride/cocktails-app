@@ -5,6 +5,7 @@ import { APIKey } from "../../common/apis/DrinkApiKey";
 import { useDispatch } from "react-redux";
 import { addDrinks } from "../../features/drinks/drinkSlice";
 import { useState } from "react";
+import "./Home.scss";
 
 const Home = () => {
   const [search, setSearch] = useState("Margarita");
@@ -26,14 +27,18 @@ const Home = () => {
   return (
     <>
       <div className="banner-img"></div>
-      <input
-        value={search}
-        onChange={(e) => setSearch(e.target.value)}
-        placeholder="Search cocktails"
-        type="text"
-        name="q"
-      />
-      <DrinkListing />
+      <div className="home-container">
+        <div className="search-area">
+          <input
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            placeholder="Search cocktails"
+            type="text"
+            name="q"
+          />
+        </div>
+        <DrinkListing />
+      </div>
     </>
   );
 };

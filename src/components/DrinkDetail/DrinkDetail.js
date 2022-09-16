@@ -22,10 +22,10 @@ export default function DrinkDetail(props) {
   if (data) {
     const drink = data.drinks[0];
     return (
-      <>
+      <div className="details-content">
         <h1>{drink.strDrink}</h1>
         <div className="drink-details">
-          <img src={drink.strDrinkThumb} alt={drink.strDrink} width="400px" />
+          <img src={drink.strDrinkThumb} alt={drink.strDrink} width="300px" />
           <div className="text-info">
             <p>{`Name: ${drink.strDrink}`}</p>
             <p>{`Category: ${drink.strCategory}`}</p>
@@ -35,7 +35,7 @@ export default function DrinkDetail(props) {
             <p>{`Instructions: ${drink.strInstructions}`}</p>
           </div>
         </div>
-      </>
+      </div>
     );
   } else {
     return null;

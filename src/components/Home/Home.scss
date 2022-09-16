@@ -1,0 +1,20 @@
+@import "../../common/colors.scss";
+
+img {
+  border-radius: 0px;
+}
+
+.search-area {
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  border: 5;
+  border-color: $accent;
+  border-radius: 9999px;
+  font-size: larger;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
